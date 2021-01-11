@@ -1,0 +1,16 @@
+<Project ToolsVersion="15.0">
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <Authors>Edward Meng</Authors>
+    <Product>StartupMesh</Product>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <WarningsAsErrors>CS4014</WarningsAsErrors>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+    <RepositoryRoot Condition="!HasTrailingSlash('$(RepositoryRoot)')">$(RepositoryRoot)\</RepositoryRoot>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(RepositoryRoot)StartupMesh.snk</AssemblyOriginatorKeyFile>
+    <ArtifactsDir>$(RepositoryRoot)artifacts\</ArtifactsDir>
+  </PropertyGroup>
+</Project>

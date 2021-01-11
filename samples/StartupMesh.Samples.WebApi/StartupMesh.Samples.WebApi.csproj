@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\StartupMesh.AspNetCore\StartupMesh.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\src\StartupMesh.Hosting\StartupMesh.Hosting.csproj" />
+    <ProjectReference Include="..\..\src\StartupMesh\StartupMesh.csproj" />
+    <ProjectReference Include="..\StartupMesh.Samples.BusinessContracts\StartupMesh.Samples.BusinessContracts.csproj" />
+    <ProjectReference Include="..\StartupMesh.Samples.BusinessServices\StartupMesh.Samples.BusinessServices.csproj" />
+  </ItemGroup>
+
+
+</Project>
